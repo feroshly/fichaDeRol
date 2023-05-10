@@ -96,7 +96,7 @@ public class VistaGeneral {
 		int numero = 0;
 		String entrada = null;
 		boolean salir = false;
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = getEntrada();
 		do {
 			try {
 				System.out.printf("%s %n", pregunta);
