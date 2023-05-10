@@ -1,0 +1,5 @@
+<map id="jcolonia.daw2022.fichaDeRol.VistaAltas" name="jcolonia.daw2022.fichaDeRol.VistaAltas">
+<area shape="rect" id="node1" title="Pide al usuario informacin para que rellenar una serie de campos de una ficha de personaje." alt="" coords="90,360,363,540"/>
+<area shape="rect" id="node2" href="$classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaGeneral.html" title="Gestiona la entrada y salida de informacion por consola." alt="" coords="5,145,448,311"/>
+<area shape="rect" id="node3" title=" " alt="" coords="191,5,262,83"/>
+</map>

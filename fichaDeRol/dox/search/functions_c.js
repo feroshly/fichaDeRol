@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['vistageneral_0',['VistaGeneral',['../classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaGeneral.html#abdc1e8ff41ac4fc8f5ef246c720ee18d',1,'jcolonia::daw2022::fichaDeRol::VistaGeneral']]],
+  ['vistageneralexception_1',['VistaGeneralException',['../classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaGeneralException.html#ac669fcdfd4486444466da2015811e936',1,'jcolonia.daw2022.fichaDeRol.VistaGeneralException.VistaGeneralException(String message)'],['../classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaGeneralException.html#aa7a69e0baded0d36b200eeab0ad9cf50',1,'jcolonia.daw2022.fichaDeRol.VistaGeneralException.VistaGeneralException(Throwable cause)'],['../classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaGeneralException.html#af9fb9b301758de2d29ac41cc64c46156',1,'jcolonia.daw2022.fichaDeRol.VistaGeneralException.VistaGeneralException(String message, Throwable cause)'],['../classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaGeneralException.html#a04e52924856494e9e039ae4ce54c7b01',1,'jcolonia.daw2022.fichaDeRol.VistaGeneralException.VistaGeneralException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace)']]],
+  ['vistalistadotextos_2',['VistaListadoTextos',['../classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaListadoTextos.html#a86d760fb4476f19d3b9c0bbb4d3b85ac',1,'jcolonia::daw2022::fichaDeRol::VistaListadoTextos']]],
+  ['vistamenu_3',['VistaMenu',['../classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaMenu.html#a4e37e5dffa0902350cd6b544e007c6e3',1,'jcolonia::daw2022::fichaDeRol::VistaMenu']]]
+];

@@ -1,0 +1,7 @@
+<map id="jcolonia.daw2022.fichaDeRol.VistaMenu" name="jcolonia.daw2022.fichaDeRol.VistaMenu">
+<area shape="rect" id="node1" title="Gestiona el menu principal." alt="" coords="220,373,543,480"/>
+<area shape="rect" id="node2" href="$classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaGeneral.html" title="Gestiona la entrada y salida de informacion por consola." alt="" coords="5,145,448,311"/>
+<area shape="rect" id="node3" title=" " alt="" coords="191,5,262,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="473,189,605,267"/>
+<area shape="rect" id="node5" title=" " alt="" coords="501,5,576,83"/>
+</map>

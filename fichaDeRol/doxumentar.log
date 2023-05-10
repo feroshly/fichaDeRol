@@ -1,0 +1,29 @@
+warning: Tag 'FORMULA_TRANSPARENT' at line 1715 of file 'Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'DOT_FONTNAME' at line 2440 of file 'Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'DOT_FONTSIZE' at line 2447 of file 'Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'DOT_TRANSPARENT' at line 2704 of file 'Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFicha.java:83: warning: explicit link request to 'almoadilla' could not be resolved
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFicha.java:83: warning: explicit link request to 'almoadilla' could not be resolved
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFicha.java:54: warning: return type of member jcolonia.daw2022.fichaDeRol.PersonajeFicha.toString is not documented
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFicha.java:83: warning: explicit link request to 'almoadilla' could not be resolved
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:37: warning: Member setUp() (function) of class jcolonia::daw2022::fichaDeRol::PersonajeFichaTest is not documented.
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:41: warning: Member tearDown() (function) of class jcolonia::daw2022::fichaDeRol::PersonajeFichaTest is not documented.
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:28: warning: Member setUpBeforeClass() (function) of class jcolonia::daw2022::fichaDeRol::PersonajeFichaTest is not documented.
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:33: warning: Member tearDownAfterClass() (function) of class jcolonia::daw2022::fichaDeRol::PersonajeFichaTest is not documented.
+<setUp>:1: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.setUp are not documented
+<setUpBeforeClass>:1: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.setUpBeforeClass are not documented
+<tearDown>:1: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.tearDown are not documented
+<tearDownAfterClass>:1: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.tearDownAfterClass are not documented
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:110: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.testSetArmadurasVARIAS are not documented
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:125: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.testSetArmasVARIAS are not documented
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:47: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.testSetNombreJugador are not documented
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:63: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.testSetNombrePersonaje are not documented
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:79: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.testSetProfesionesVARIAS are not documented
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/PersonajeFichaTest.java:94: warning: parameters of member jcolonia.daw2022.fichaDeRol.PersonajeFichaTest.testSetRazasVARIAS are not documented
+<VistaGeneralException>:1: warning: parameters of member jcolonia.daw2022.fichaDeRol.VistaGeneralException.VistaGeneralException are not documented
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/VistaListadoTextos.java:14: warning: Member fichaAlmacenada (variable) of class jcolonia::daw2022::fichaDeRol::VistaListadoTextos is not documented.
+D:/Luis/3 PROGRAMACION/javasrc2022/1A_EjerciciosEclipse22/fichaDeRol/src/jcolonia/daw2022/fichaDeRol/VistaMenu.java:17: warning: argument 'T' of command @param is not found in the argument list of jcolonia.daw2022.fichaDeRol.VistaMenu::VistaMenu(T[] opcionesMenuEjemplo)

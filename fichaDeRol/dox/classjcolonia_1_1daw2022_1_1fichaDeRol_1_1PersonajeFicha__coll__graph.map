@@ -1,0 +1,7 @@
+<map id="jcolonia.daw2022.fichaDeRol.PersonajeFicha" name="jcolonia.daw2022.fichaDeRol.PersonajeFicha">
+<area shape="rect" id="node1" title="Almacena campos de distintos tipos que conformasn la ficha de personaje y gestiona personajes o ficha..." alt="" coords="406,189,813,516"/>
+<area shape="rect" id="node2" href="$enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoProfesiones.html" title="Enumeracion de las distintas profesiones." alt="" coords="5,5,301,127"/>
+<area shape="rect" id="node3" href="$enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoRazas.html" title="Enumeracion de las distintas razas." alt="" coords="326,5,591,127"/>
+<area shape="rect" id="node4" href="$enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmaduras.html" title="Enumeracion de las distintas armaduras." alt="" coords="616,5,907,127"/>
+<area shape="rect" id="node5" href="$enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmas.html" title="Enumeracion de las distintas armas." alt="" coords="931,5,1197,127"/>
+</map>

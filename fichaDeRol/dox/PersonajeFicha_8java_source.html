@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Nombre (cambiar por nombre de proyecto): Fichero Fuente src/jcolonia/daw2022/fichaDeRol/PersonajeFicha.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Nombre (cambiar por nombre de proyecto)<span id="projectnumber">&#160;Versión (cambiar por versión de proyecto)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('PersonajeFicha_8java_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PersonajeFicha.java</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">package </span>jcolonia.daw2022.fichaDeRol;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">import</span> java.io.BufferedReader;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">import</span> java.io.IOException;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">import</span> java.nio.file.Files;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">import</span> java.nio.file.Path;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html">   13</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html">PersonajeFicha</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece">   18</a></span>    <span class="keyword">private</span> String <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece">nombreJugador</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04">   23</a></span>    <span class="keyword">private</span> String <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04">nombrePersonaje</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7">   28</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoProfesiones.html">RasgoProfesiones</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7">profesion</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">   33</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoRazas.html">RasgoRazas</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae">   38</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmaduras.html">RasgoArmaduras</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae">armadura</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">   43</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmas.html">RasgoArmas</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4929949038c003e289176149623900fe">   48</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4929949038c003e289176149623900fe">PersonajeFicha</a>() {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        super();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    @Override</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a98653eff57ce2871ed8a2b4f894bb364">   57</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a98653eff57ce2871ed8a2b4f894bb364">toString</a>() {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        String textoResultado=<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">//      textoResultado+=String.format(&quot;-&gt;&gt;Ficha de Personaje:&lt;&lt;-%n&quot;);</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//      textoResultado+=String.format(&quot;  NOMBRE-JUGADOR| NOMBRE-PERSONAJE|PROFESION |RAZA |ARMADURA |ARMA |%n&quot;);</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//      textoResultado+=String.format(&quot;  %s|&quot;,nombreJugador);</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//      textoResultado+=String.format(&quot;  %s|&quot;,nombrePersonaje);</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//      textoResultado+=String.format(&quot;  %s|&quot;,profesion);</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//      textoResultado+=String.format(&quot;  %s|&quot;,raza);</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//      textoResultado+=String.format(&quot;  %s|&quot;,armadura);</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//      textoResultado+=String.format(&quot;  %s|&quot;,arma);</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">//      textoResultado+=String.format(&quot;%n............%n&quot;);</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">//      return textoResultado;</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        textoResultado+=String.format(<span class="stringliteral">&quot;-&gt;&gt;Ficha de Personaje:&lt;&lt;-%n&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        textoResultado+=String.format(<span class="stringliteral">&quot;  ·NOMBRE-JUGADOR:\n%s%n&quot;</span>,<a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece">nombreJugador</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        textoResultado+=String.format(<span class="stringliteral">&quot;  ·NOMBRE-PERSONAJE:\n%s%n&quot;</span>, <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04">nombrePersonaje</a>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        textoResultado+=String.format(<span class="stringliteral">&quot;  ·PROFESION:\n%s%n&quot;</span>, <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7">profesion</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        textoResultado+=String.format(<span class="stringliteral">&quot;  ·RAZA:\n%s%n&quot;</span> , <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        textoResultado+=String.format(<span class="stringliteral">&quot;  ·ARMADURA:\n%s%n&quot;</span> , <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae">armadura</a>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        textoResultado+=String.format(<span class="stringliteral">&quot;  ·ARMA:\n%s%n&quot;</span> , <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        textoResultado+=String.format(<span class="stringliteral">&quot;............\n&quot;</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> textoResultado;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ab401115f53d6ba840c79c0ca60a287ca">   86</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ab401115f53d6ba840c79c0ca60a287ca">toStringCsv</a>(){</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        String textoResultado=<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        textoResultado=String.format(<span class="stringliteral">&quot;%s#%s#%s#%s#%s#%s&quot;</span>,<a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece">nombreJugador</a>, <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04">nombrePersonaje</a>, <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7">profesion</a>, <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>, <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae">armadura</a>, <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> textoResultado;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a82e9dd65385fa9b9b4f8ccdf2d929ec7">   97</a></span>    <span class="keyword">public</span> <a class="code hl_class" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo.html">Equipo</a> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a82e9dd65385fa9b9b4f8ccdf2d929ec7">importarPersonajeFichaCsvToEquipo</a>(){</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_class" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo.html">Equipo</a> equipoRetornado = <span class="keyword">new</span> <a class="code hl_class" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo.html">Equipo</a>();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        Path refArchivo = Path.of(<span class="stringliteral">&quot;LaFichaDePersonajeGuardada.csv&quot;</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">try</span> (BufferedReader in = Files.newBufferedReader(refArchivo)) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            String textoEntrada = in.readLine(); <span class="comment">// Empieza a leer</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">while</span> (textoEntrada != <span class="keyword">null</span>) { <span class="comment">// Seguir leyendo, Si hay una linea despues devuelve null.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <a class="code hl_class" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html">PersonajeFicha</a> fichaRetornada = <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a5b5a4eae46e2b815c48d94ad03062de2">importarLineaCsvToPersonajeFicha</a>(textoEntrada);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                equipoRetornado.<a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo.html#aa380194ca743e40cd704dc8134d44b2d">añadirNuevoPersonaje</a>(fichaRetornada);<span class="comment">//la mete en equipo principal</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                textoEntrada = in.readLine(); <span class="comment">// Para que siga leyendo en el siguiente ciclo del bucle</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        } <span class="keywordflow">catch</span> (IOException e) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            System.err.printf(<span class="stringliteral">&quot;Error de escritura: %s&quot;</span>, e.getLocalizedMessage());</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">return</span> equipoRetornado;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a5b5a4eae46e2b815c48d94ad03062de2">  123</a></span>    <span class="keyword">public</span> <a class="code hl_class" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html">PersonajeFicha</a> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a5b5a4eae46e2b815c48d94ad03062de2">importarLineaCsvToPersonajeFicha</a>(String texto){</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        String [] seccion=texto.split(<span class="stringliteral">&quot;#&quot;</span>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <a class="code hl_class" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html">PersonajeFicha</a> fichaInversa=<span class="keyword">new</span> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4929949038c003e289176149623900fe">PersonajeFicha</a>();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        fichaInversa.<a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aa32cffc4f4d199f18a0f2a009fceaede">setNombreJugador</a>(seccion[0]);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        fichaInversa.<a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ad025ce6476a9d6bd2ed271b07f035505">setNombrePersonaje</a>(seccion[1]);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoProfesiones.html">RasgoProfesiones</a> profesiones;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        profesiones=<a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoProfesiones.html">RasgoProfesiones</a>.valueOf(seccion[2]);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        fichaInversa.<a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a21d91a34a0cb8681406867d4277fbb47">setProfesion</a>(profesiones);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoRazas.html">RasgoRazas</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>=<a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoRazas.html">RasgoRazas</a>.valueOf(seccion[3]);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        fichaInversa.<a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a8241cdc0252650e609db7631f8bdbf46">setRaza</a>(<a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmaduras.html">RasgoArmaduras</a> armaduras;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        armaduras=<a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmaduras.html">RasgoArmaduras</a>.valueOf(seccion[4]);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        fichaInversa.<a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a075deaf88b667918d3d08e0a2e167059">setArmadura</a>(armaduras);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmas.html">RasgoArmas</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>=<a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmas.html">RasgoArmas</a>.valueOf(seccion[5]);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        fichaInversa.<a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a74b32098d026c0e9eed4e72e00daf07e">setArma</a>(<a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>);     </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordflow">return</span> fichaInversa;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a0e50d6d146923c5ed44befab6359b01d">  154</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a0e50d6d146923c5ed44befab6359b01d">getNombreJugador</a>() {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece">nombreJugador</a>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aaaa34dae66380c207ca33fcc4932fa02">  162</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aaaa34dae66380c207ca33fcc4932fa02">getNombrePersonaje</a>() {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04">nombrePersonaje</a>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a008e351f00789d24f73968f3a17a6a23">  170</a></span>    <span class="keyword">public</span> <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoRazas.html">RasgoRazas</a> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a008e351f00789d24f73968f3a17a6a23">getRaza</a>() {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af909482022de22be00508195b2e19481">  178</a></span>    <span class="keyword">public</span> <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoProfesiones.html">RasgoProfesiones</a> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af909482022de22be00508195b2e19481">getProfesion</a>() {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7">profesion</a>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4412a2220d181de4eed00e380e88b7ab">  186</a></span>    <span class="keyword">public</span> <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmaduras.html">RasgoArmaduras</a> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4412a2220d181de4eed00e380e88b7ab">getArmadura</a>() {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae">armadura</a>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aae944858232f47b387089c76f34dffa4">  194</a></span>    <span class="keyword">public</span> <a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmas.html">RasgoArmas</a> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aae944858232f47b387089c76f34dffa4">getArma</a>() {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ad025ce6476a9d6bd2ed271b07f035505">  202</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ad025ce6476a9d6bd2ed271b07f035505">setNombrePersonaje</a>(String <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04">nombrePersonaje</a>) {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        this.nombrePersonaje = <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04">nombrePersonaje</a>;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aa32cffc4f4d199f18a0f2a009fceaede">  210</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aa32cffc4f4d199f18a0f2a009fceaede">setNombreJugador</a>(String <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece">nombreJugador</a>) {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        this.nombreJugador = <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece">nombreJugador</a>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a8241cdc0252650e609db7631f8bdbf46">  218</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a8241cdc0252650e609db7631f8bdbf46">setRaza</a>(<a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoRazas.html">RasgoRazas</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>) {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        this.raza = <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">raza</a>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    }</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a21d91a34a0cb8681406867d4277fbb47">  226</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a21d91a34a0cb8681406867d4277fbb47">setProfesion</a>(<a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoProfesiones.html">RasgoProfesiones</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7">profesion</a>) {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        this.profesion = <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7">profesion</a>;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a075deaf88b667918d3d08e0a2e167059">  234</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a075deaf88b667918d3d08e0a2e167059">setArmadura</a>(<a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmaduras.html">RasgoArmaduras</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae">armadura</a>) {</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        this.armadura = <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae">armadura</a>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    }</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a74b32098d026c0e9eed4e72e00daf07e">  242</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a74b32098d026c0e9eed4e72e00daf07e">setArma</a>(<a class="code hl_class" href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmas.html">RasgoArmas</a> <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>) {</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        this.arma = <a class="code hl_variable" href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">arma</a>;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo_html"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo.html">jcolonia.daw2022.fichaDeRol.Equipo</a></div><div class="ttdoc">Almacena y gestiona una coleccion de fichas de personaje.</div><div class="ttdef"><b>Definition:</b> <a href="Equipo_8java_source.html#l00011">Equipo.java:11</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo_html_aa380194ca743e40cd704dc8134d44b2d"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo.html#aa380194ca743e40cd704dc8134d44b2d">jcolonia.daw2022.fichaDeRol.Equipo.añadirNuevoPersonaje</a></div><div class="ttdeci">void añadirNuevoPersonaje(PersonajeFicha nuevoPersonaje)</div><div class="ttdoc">Añade un nuevo personaje y lo almacena en la lista de personaje.</div><div class="ttdef"><b>Definition:</b> <a href="Equipo_8java_source.html#l00028">Equipo.java:28</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html">jcolonia.daw2022.fichaDeRol.PersonajeFicha</a></div><div class="ttdoc">Almacena campos de distintos tipos que conformasn la ficha de personaje y gestiona personajes o ficha...</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00013">PersonajeFicha.java:13</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a008e351f00789d24f73968f3a17a6a23"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a008e351f00789d24f73968f3a17a6a23">jcolonia.daw2022.fichaDeRol.PersonajeFicha.getRaza</a></div><div class="ttdeci">RasgoRazas getRaza()</div><div class="ttdoc">Devuelve la raza del personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00170">PersonajeFicha.java:170</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a075deaf88b667918d3d08e0a2e167059"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a075deaf88b667918d3d08e0a2e167059">jcolonia.daw2022.fichaDeRol.PersonajeFicha.setArmadura</a></div><div class="ttdeci">void setArmadura(RasgoArmaduras armadura)</div><div class="ttdoc">Asigna la armadura al personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00234">PersonajeFicha.java:234</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a0e50d6d146923c5ed44befab6359b01d"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a0e50d6d146923c5ed44befab6359b01d">jcolonia.daw2022.fichaDeRol.PersonajeFicha.getNombreJugador</a></div><div class="ttdeci">String getNombreJugador()</div><div class="ttdoc">Devuelve el nombre del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00154">PersonajeFicha.java:154</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a139e651efd188ec2b6a39835143bbde7"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7">jcolonia.daw2022.fichaDeRol.PersonajeFicha.profesion</a></div><div class="ttdeci">RasgoProfesiones profesion</div><div class="ttdoc">Las diferentes profesiones a elegir por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00028">PersonajeFicha.java:28</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a21d91a34a0cb8681406867d4277fbb47"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a21d91a34a0cb8681406867d4277fbb47">jcolonia.daw2022.fichaDeRol.PersonajeFicha.setProfesion</a></div><div class="ttdeci">void setProfesion(RasgoProfesiones profesion)</div><div class="ttdoc">Asigna la profesion al personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00226">PersonajeFicha.java:226</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a4412a2220d181de4eed00e380e88b7ab"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4412a2220d181de4eed00e380e88b7ab">jcolonia.daw2022.fichaDeRol.PersonajeFicha.getArmadura</a></div><div class="ttdeci">RasgoArmaduras getArmadura()</div><div class="ttdoc">Devuelve la armadura del personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00186">PersonajeFicha.java:186</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a4929949038c003e289176149623900fe"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4929949038c003e289176149623900fe">jcolonia.daw2022.fichaDeRol.PersonajeFicha.PersonajeFicha</a></div><div class="ttdeci">PersonajeFicha()</div><div class="ttdoc">Inicializa los valores correspondientes.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00048">PersonajeFicha.java:48</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a5b5a4eae46e2b815c48d94ad03062de2"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a5b5a4eae46e2b815c48d94ad03062de2">jcolonia.daw2022.fichaDeRol.PersonajeFicha.importarLineaCsvToPersonajeFicha</a></div><div class="ttdeci">PersonajeFicha importarLineaCsvToPersonajeFicha(String texto)</div><div class="ttdoc">Lee y Divide cada linea en secciones a partir de un separador hastag# y rellena con cada seccion el c...</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00123">PersonajeFicha.java:123</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a74b32098d026c0e9eed4e72e00daf07e"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a74b32098d026c0e9eed4e72e00daf07e">jcolonia.daw2022.fichaDeRol.PersonajeFicha.setArma</a></div><div class="ttdeci">void setArma(RasgoArmas arma)</div><div class="ttdoc">Asigna el arma al personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00242">PersonajeFicha.java:242</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a8241cdc0252650e609db7631f8bdbf46"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a8241cdc0252650e609db7631f8bdbf46">jcolonia.daw2022.fichaDeRol.PersonajeFicha.setRaza</a></div><div class="ttdeci">void setRaza(RasgoRazas raza)</div><div class="ttdoc">Asigna la raza al personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00218">PersonajeFicha.java:218</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a82e9dd65385fa9b9b4f8ccdf2d929ec7"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a82e9dd65385fa9b9b4f8ccdf2d929ec7">jcolonia.daw2022.fichaDeRol.PersonajeFicha.importarPersonajeFichaCsvToEquipo</a></div><div class="ttdeci">Equipo importarPersonajeFichaCsvToEquipo()</div><div class="ttdoc">Lee cada una de las lineas del archivo seleccionado y las formatea al estilo ficha de personaje de ro...</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00097">PersonajeFicha.java:97</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a98653eff57ce2871ed8a2b4f894bb364"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a98653eff57ce2871ed8a2b4f894bb364">jcolonia.daw2022.fichaDeRol.PersonajeFicha.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">Pasa los datos del personaje a con formato de ficha de rol.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00057">PersonajeFicha.java:57</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_a9f8ec3fbcd882e5f9d209eee378ab678"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678">jcolonia.daw2022.fichaDeRol.PersonajeFicha.raza</a></div><div class="ttdeci">RasgoRazas raza</div><div class="ttdoc">Las diferentes raza a elegir por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00033">PersonajeFicha.java:33</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_aa32cffc4f4d199f18a0f2a009fceaede"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aa32cffc4f4d199f18a0f2a009fceaede">jcolonia.daw2022.fichaDeRol.PersonajeFicha.setNombreJugador</a></div><div class="ttdeci">void setNombreJugador(String nombreJugador)</div><div class="ttdoc">Asigna el nombre al jugador.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00210">PersonajeFicha.java:210</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_aaaa34dae66380c207ca33fcc4932fa02"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aaaa34dae66380c207ca33fcc4932fa02">jcolonia.daw2022.fichaDeRol.PersonajeFicha.getNombrePersonaje</a></div><div class="ttdeci">String getNombrePersonaje()</div><div class="ttdoc">Devuelve el nombre del personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00162">PersonajeFicha.java:162</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_aae944858232f47b387089c76f34dffa4"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aae944858232f47b387089c76f34dffa4">jcolonia.daw2022.fichaDeRol.PersonajeFicha.getArma</a></div><div class="ttdeci">RasgoArmas getArma()</div><div class="ttdoc">Devuelve el arma del personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00194">PersonajeFicha.java:194</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_ab401115f53d6ba840c79c0ca60a287ca"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ab401115f53d6ba840c79c0ca60a287ca">jcolonia.daw2022.fichaDeRol.PersonajeFicha.toStringCsv</a></div><div class="ttdeci">String toStringCsv()</div><div class="ttdoc">Pasa los datos del personaje a formato CSV: Una unica linea de texto separada por #almoadilla.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00086">PersonajeFicha.java:86</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_acdf3530121c3c2150e2793a7d37fd3ae"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae">jcolonia.daw2022.fichaDeRol.PersonajeFicha.armadura</a></div><div class="ttdeci">RasgoArmaduras armadura</div><div class="ttdoc">Las diferentes armadura a elegir por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00038">PersonajeFicha.java:38</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_ad025ce6476a9d6bd2ed271b07f035505"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ad025ce6476a9d6bd2ed271b07f035505">jcolonia.daw2022.fichaDeRol.PersonajeFicha.setNombrePersonaje</a></div><div class="ttdeci">void setNombrePersonaje(String nombrePersonaje)</div><div class="ttdoc">Asigna el nombre al Personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00202">PersonajeFicha.java:202</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_ae2c2e97e3931e694d77c8f65ac9be82b"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b">jcolonia.daw2022.fichaDeRol.PersonajeFicha.arma</a></div><div class="ttdeci">RasgoArmas arma</div><div class="ttdoc">Las diferentes arma a elegir por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00043">PersonajeFicha.java:43</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_af909482022de22be00508195b2e19481"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af909482022de22be00508195b2e19481">jcolonia.daw2022.fichaDeRol.PersonajeFicha.getProfesion</a></div><div class="ttdeci">RasgoProfesiones getProfesion()</div><div class="ttdoc">Devuelve la profesion del personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00178">PersonajeFicha.java:178</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_af9fc1c91afe99f21a4fd4caa1aa05e04"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04">jcolonia.daw2022.fichaDeRol.PersonajeFicha.nombrePersonaje</a></div><div class="ttdeci">String nombrePersonaje</div><div class="ttdoc">El nombre del personaje.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00023">PersonajeFicha.java:23</a></div></div>
+<div class="ttc" id="aclassjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha_html_aff206a92d8614376f3472a3a1e861ece"><div class="ttname"><a href="classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece">jcolonia.daw2022.fichaDeRol.PersonajeFicha.nombreJugador</a></div><div class="ttdeci">String nombreJugador</div><div class="ttdoc">El nombre del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="PersonajeFicha_8java_source.html#l00018">PersonajeFicha.java:18</a></div></div>
+<div class="ttc" id="aenumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmaduras_html"><div class="ttname"><a href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmaduras.html">jcolonia.daw2022.fichaDeRol.RasgoArmaduras</a></div><div class="ttdoc">Enumeracion de las distintas armaduras.</div><div class="ttdef"><b>Definition:</b> <a href="RasgoArmaduras_8java_source.html#l00007">RasgoArmaduras.java:7</a></div></div>
+<div class="ttc" id="aenumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmas_html"><div class="ttname"><a href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoArmas.html">jcolonia.daw2022.fichaDeRol.RasgoArmas</a></div><div class="ttdoc">Enumeracion de las distintas armas.</div><div class="ttdef"><b>Definition:</b> <a href="RasgoArmas_8java_source.html#l00007">RasgoArmas.java:7</a></div></div>
+<div class="ttc" id="aenumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoProfesiones_html"><div class="ttname"><a href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoProfesiones.html">jcolonia.daw2022.fichaDeRol.RasgoProfesiones</a></div><div class="ttdoc">Enumeracion de las distintas profesiones.</div><div class="ttdef"><b>Definition:</b> <a href="RasgoProfesiones_8java_source.html#l00008">RasgoProfesiones.java:8</a></div></div>
+<div class="ttc" id="aenumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoRazas_html"><div class="ttname"><a href="enumjcolonia_1_1daw2022_1_1fichaDeRol_1_1RasgoRazas.html">jcolonia.daw2022.fichaDeRol.RasgoRazas</a></div><div class="ttdoc">Enumeracion de las distintas razas.</div><div class="ttdef"><b>Definition:</b> <a href="RasgoRazas_8java_source.html#l00007">RasgoRazas.java:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_78deb72e8665551e78cec9eb6bfcad5f.html">jcolonia</a></li><li class="navelem"><a class="el" href="dir_92321c9ac1024e6ba3441328a76be7af.html">daw2022</a></li><li class="navelem"><a class="el" href="dir_f6a584d2d15bc69d0a7abcec6e5639d6.html">fichaDeRol</a></li><li class="navelem"><b>PersonajeFicha.java</b></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

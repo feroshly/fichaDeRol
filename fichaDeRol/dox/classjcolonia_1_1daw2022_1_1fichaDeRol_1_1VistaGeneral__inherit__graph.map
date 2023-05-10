@@ -1,0 +1,5 @@
+<map id="jcolonia.daw2022.fichaDeRol.VistaGeneral" name="jcolonia.daw2022.fichaDeRol.VistaGeneral">
+<area shape="rect" id="node1" title="Gestiona la entrada y salida de informacion por consola." alt="" coords="82,5,525,185"/>
+<area shape="rect" id="node2" href="$classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaAltas.html" title="Pide al usuario informacin para que rellenar una serie de campos de una ficha de personaje." alt="" coords="5,233,279,413"/>
+<area shape="rect" id="node3" href="$classjcolonia_1_1daw2022_1_1fichaDeRol_1_1VistaMenu.html" title="Gestiona el menu principal." alt="" coords="303,270,626,377"/>
+</map>

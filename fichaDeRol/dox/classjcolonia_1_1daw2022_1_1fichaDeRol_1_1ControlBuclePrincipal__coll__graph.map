@@ -1,0 +1,6 @@
+<map id="jcolonia.daw2022.fichaDeRol.ControlBuclePrincipal" name="jcolonia.daw2022.fichaDeRol.ControlBuclePrincipal">
+<area shape="rect" id="node1" title="Gestiona el bucle principal del que dependen el resto de funcionalidades." alt="" coords="39,499,353,679"/>
+<area shape="rect" id="node2" href="$classjcolonia_1_1daw2022_1_1fichaDeRol_1_1Equipo.html" title="Almacena y gestiona una coleccion de fichas de personaje." alt="" coords="5,285,387,436"/>
+<area shape="rect" id="node3" title=" " alt="" coords="25,145,367,223"/>
+<area shape="rect" id="node4" title=" " alt="" coords="166,5,226,83"/>
+</map>

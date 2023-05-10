@@ -1,0 +1,156 @@
+@startuml
+skinparam shadowing false
+
+VistaGeneral--|>VistaGeneralException:usa
+VistaGeneralException--|>Exception:es un
+
+PersonajeFicha..>PersonajeFichaTest:usa
+Equipo..>EquipoTest:usa
+
+ControlBuclePrincipal..>VistaMenu:usa
+ControlBuclePrincipal..>AccesoDatos:usa
+ControlBuclePrincipal..>PersonajeFicha:usa
+ControlBuclePrincipal..>VistaListadoTextos:usa
+ControlBuclePrincipal..>VistaAltas:usa
+VistaMenu--|>VistaGeneral:es un
+PersonajeFicha<--Equipo:esta formado por
+PersonajeFicha o-- Profesion:enum
+PersonajeFicha o-- Raza:enum
+PersonajeFicha o-- Armadura:enum
+PersonajeFicha o-- Arma:enum
+
+Class VistaGeneralException{
+}
+
+Class VistaMenu{
+{final}{static}-TEXTO_OPTIONS : String[]
+-in : Scanner
+-listaOpciones : ArrayList<String>
++VistaMenu(T[])
++mostrarOpciones()
++pedirOpcion()
+}
+
+Class VistaListadoTextos{
+-fichaAlmacenada : Vector<Equipo>
++VistaListadoTextos(Equipo)
++mostrar()
+}
+
+Class VistaGeneral{
+{final}-TextoPeticion : String
+{final}{static}-entrada : Scanner
+{static}+getEntrada()
+{static}+pedirEntero()
+{static}+pedirEntero(String)
+{static}+pedirEntero(String, int, int)
+{static}+pedirEnteroAlt(int, int)
+}
+
+Class VistaAltas{
+-listaNuevosTextos : Vector<String>
+-peticionNombreJugador : String
+-peticionNombrePersonaje : String
+
++VistaAltas()
+-mostrarAviso(String)
+-preguntarNombreJugador()
+-preguntarNombrePersonaje()
+-preguntarProfesion()
+-preguntarRaza()
+-preguntarArmadura()
+-preguntarArma()
++cargarPersonaje()
+}
+
+Class AccesoDatos{
+ +AccesoDatos()
+{static} +exportarEquipoToCsv(equipoDePersonajes:List<String>, refArchivo:String):void
+}
+
+Class ControlBuclePrincipal{
+{static} -OPCIONES_MENU : String[]
+{static} -RESPUESTAS_SUBTITULO : String[]
++equipoPrincipal : Equipo
++listaNuevosPersonajes : Vector<String>
++ControlBuclePrincipal()
+-buclePrincipal()
+-opcionCrearPersonaje():void
+-opciónListadoTextos():void
+-opcionImportarTextos():void
+-opciónExportarTextos():void
+{static} +main(String[]):void
+}
+
+Class PersonajeFicha{
+-datosImportados : Vector<String>
+-nombrePersonaje : String
+-nombreJugador : String
+-profesion : RasgoProfesiones
+-raza : RasgoRazas
+-armadura : RasgoArmaduras
+-arma : RasgoArmas
+-cosaEquipo : Equipo
+-totalPersonajes : int
+-posicionPersonaje : int
+
++PersonajeFicha()
++toString():String
++toStringCsv():String
++importarPersonajeFichaCsvToEquipo():Equipo
++importarLineaCsvToPersonajeFicha(String):PersonajeFicha
++getNombreJugador():String
++getNombrePersonaje():String
++getRaza():RasgosRazas
++getProfesion():RasgosProfesiones
++getArmadura():RasgosArmaduras
++getArma():RasgosArmas
++setNombrePersonaje(String):Void
++setNombreJugador(String):Void
++setRaza(RasgoRazas):Void
++setProfesion(RasgoProfesiones):Void
++setArmadura(RasgoArmaduras):Void
++setArma(RasgoArmas):Void
+}
+
+Class Equipo{
++posicion : int
++listaDatos : Vector<PersonajeFicha>
++Equipo()
++añadirNuevoPersonaje(PersonajeFicha)
++consultarPersonajePorNumero(int)
++consultarNumeroDePersonajes()
++tipoXToText()
++formatearEquipoToCsv()
+}
+
+Enum Profesion{
+Bardo
+Asesino
+Mago
+Guerrero
+}
+
+Enum Raza{
+Humano
+Elfo
+Orco
+Enano
+}
+
+Enum Armadura{
+Pesada
+cuero
+Tunica
+}
+
+Enum Arma{
+Hacha
+Daga
+Espada
+Grimorio
+}
+
+
+
+@enduml

@@ -1,0 +1,26 @@
+var classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha =
+[
+    [ "PersonajeFicha", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4929949038c003e289176149623900fe", null ],
+    [ "getArma", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aae944858232f47b387089c76f34dffa4", null ],
+    [ "getArmadura", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a4412a2220d181de4eed00e380e88b7ab", null ],
+    [ "getNombreJugador", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a0e50d6d146923c5ed44befab6359b01d", null ],
+    [ "getNombrePersonaje", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aaaa34dae66380c207ca33fcc4932fa02", null ],
+    [ "getProfesion", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af909482022de22be00508195b2e19481", null ],
+    [ "getRaza", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a008e351f00789d24f73968f3a17a6a23", null ],
+    [ "importarLineaCsvToPersonajeFicha", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a5b5a4eae46e2b815c48d94ad03062de2", null ],
+    [ "importarPersonajeFichaCsvToEquipo", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a82e9dd65385fa9b9b4f8ccdf2d929ec7", null ],
+    [ "setArma", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a74b32098d026c0e9eed4e72e00daf07e", null ],
+    [ "setArmadura", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a075deaf88b667918d3d08e0a2e167059", null ],
+    [ "setNombreJugador", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aa32cffc4f4d199f18a0f2a009fceaede", null ],
+    [ "setNombrePersonaje", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ad025ce6476a9d6bd2ed271b07f035505", null ],
+    [ "setProfesion", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a21d91a34a0cb8681406867d4277fbb47", null ],
+    [ "setRaza", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a8241cdc0252650e609db7631f8bdbf46", null ],
+    [ "toString", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a98653eff57ce2871ed8a2b4f894bb364", null ],
+    [ "toStringCsv", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ab401115f53d6ba840c79c0ca60a287ca", null ],
+    [ "arma", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#ae2c2e97e3931e694d77c8f65ac9be82b", null ],
+    [ "armadura", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#acdf3530121c3c2150e2793a7d37fd3ae", null ],
+    [ "nombreJugador", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#aff206a92d8614376f3472a3a1e861ece", null ],
+    [ "nombrePersonaje", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#af9fc1c91afe99f21a4fd4caa1aa05e04", null ],
+    [ "profesion", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a139e651efd188ec2b6a39835143bbde7", null ],
+    [ "raza", "classjcolonia_1_1daw2022_1_1fichaDeRol_1_1PersonajeFicha.html#a9f8ec3fbcd882e5f9d209eee378ab678", null ]
+];
