@@ -115,15 +115,18 @@ public class VistaAltas extends VistaGeneral{
 		VistaMenu menuProfesion = new VistaMenu(profesion);
 		// Prep
 		menuProfesion.mostrarOpciones();
-		///--------------
+		///--------------Este trozo permite acceder a los ataques de cada clase.
+							//La variable respuesta es delicada, para elegir el enum debe ser MENOS 1,
+							//pero al convertirlo en un CASE SWITCH tengo que quitar el MENOS 1.
 		int respuesta;
-		respuesta = (menuProfesion.pedirOpcion() - 1);
-		
+		//respuesta = (menuProfesion.pedirOpcion() - 1);//NO BORRAR
 		boolean exit=false;
 		do {
+			respuesta = (menuProfesion.pedirOpcion());
 			switch(respuesta) {
 				case 1: mostrarAtaquesAsesino();
 					break;
+					
 				case 2: mostrarAtaquesSanador();
 					break;
 				
@@ -135,15 +138,44 @@ public class VistaAltas extends VistaGeneral{
 				
 				case 0:
 					exit= true;
-	
 				default:
 					System.out.printf("\nSe acabo el programa\n\n");
 				}
 		}while(!exit);	
 		///--------------
+		
 		RasgoProfesiones nuevaProfesion = profesion[respuesta];
+		
 		System.out.printf("%s%n%n",nuevaProfesion);
 		return nuevaProfesion;
+	}
+
+	private void mostrarAtaquesMago() {
+		AtaquesMago []magoAtaques;
+		magoAtaques= AtaquesMago.values();
+		VistaMenu menuAtaquesMago=new VistaMenu(magoAtaques);
+		menuAtaquesMago.mostrarOpciones();
+	}
+
+	private void mostrarAtaquesGuerrero() {
+		AtaquesGuerrero []guerreroAtaques;
+		guerreroAtaques=AtaquesGuerrero.values();
+		VistaMenu menuGuerreroAtaques= new VistaMenu(guerreroAtaques);
+		menuGuerreroAtaques.mostrarOpciones();
+	}
+
+	private void mostrarAtaquesSanador() {
+		AtaquesSanador []sanadorAtaques;
+		sanadorAtaques=AtaquesSanador.values();
+		VistaMenu menuSanadorAtaques=new VistaMenu(sanadorAtaques);
+		menuSanadorAtaques.mostrarOpciones();
+	}
+
+	private void mostrarAtaquesAsesino() {
+		AtaquesAsesino []asesinoAtaques;
+		asesinoAtaques=AtaquesAsesino.values();
+		VistaMenu menuAtaques=new VistaMenu(asesinoAtaques);
+		menuAtaques.mostrarOpciones();
 	}
 
 	/**
