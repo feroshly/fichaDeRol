@@ -118,24 +118,31 @@ public class VistaAltas extends VistaGeneral{
 		///--------------Este trozo permite acceder a los ataques de cada clase.
 							//La variable respuesta es delicada, para elegir el enum debe ser MENOS 1,
 							//pero al convertirlo en un CASE SWITCH tengo que quitar el MENOS 1.
-		int respuesta;
+		int eleccionProfesion;
+		int eleccionProfesionAtaques;
+		//int respuesta;
 		//respuesta = (menuProfesion.pedirOpcion() - 1);//NO BORRAR
+		
+
 		boolean exit=false;
 		do {
-			respuesta = (menuProfesion.pedirOpcion());
-			switch(respuesta) {
+			eleccionProfesion = (menuProfesion.pedirOpcion() - 1);//NO BORRAR
+			//Como es un case no hace falta restarle 1,
+			//Como se lo hemos restado antes se lo sumamos para igualar.
+			eleccionProfesionAtaques= (eleccionProfesion+1);
+			switch(eleccionProfesionAtaques) {
 				case 1: mostrarAtaquesAsesino();
-					break;
+				break;
 					
 				case 2: mostrarAtaquesSanador();
-					break;
+				break;
 				
 				case 3: mostrarAtaquesGuerrero();
-					break;
+				break;
 				
 				case 4: mostrarAtaquesMago();
-					break;
-				
+				break;
+
 				case 0:
 					exit= true;
 				default:
@@ -144,24 +151,17 @@ public class VistaAltas extends VistaGeneral{
 		}while(!exit);	
 		///--------------
 		
-		RasgoProfesiones nuevaProfesion = profesion[respuesta];
+		RasgoProfesiones nuevaProfesion = profesion[eleccionProfesion];
 		
 		System.out.printf("%s%n%n",nuevaProfesion);
 		return nuevaProfesion;
 	}
 
-	private void mostrarAtaquesMago() {
-		AtaquesMago []magoAtaques;
-		magoAtaques= AtaquesMago.values();
-		VistaMenu menuAtaquesMago=new VistaMenu(magoAtaques);
-		menuAtaquesMago.mostrarOpciones();
-	}
-
-	private void mostrarAtaquesGuerrero() {
-		AtaquesGuerrero []guerreroAtaques;
-		guerreroAtaques=AtaquesGuerrero.values();
-		VistaMenu menuGuerreroAtaques= new VistaMenu(guerreroAtaques);
-		menuGuerreroAtaques.mostrarOpciones();
+	private void mostrarAtaquesAsesino() {
+		AtaquesAsesino []asesinoAtaques;
+		asesinoAtaques=AtaquesAsesino.values();
+		VistaMenu menuAtaques=new VistaMenu(asesinoAtaques);
+		menuAtaques.mostrarOpciones();
 	}
 
 	private void mostrarAtaquesSanador() {
@@ -171,11 +171,18 @@ public class VistaAltas extends VistaGeneral{
 		menuSanadorAtaques.mostrarOpciones();
 	}
 
-	private void mostrarAtaquesAsesino() {
-		AtaquesAsesino []asesinoAtaques;
-		asesinoAtaques=AtaquesAsesino.values();
-		VistaMenu menuAtaques=new VistaMenu(asesinoAtaques);
-		menuAtaques.mostrarOpciones();
+	private void mostrarAtaquesGuerrero() {
+		AtaquesGuerrero []guerreroAtaques;
+		guerreroAtaques=AtaquesGuerrero.values();
+		VistaMenu menuGuerreroAtaques= new VistaMenu(guerreroAtaques);
+		menuGuerreroAtaques.mostrarOpciones();
+	}
+
+	private void mostrarAtaquesMago() {
+		AtaquesMago []magoAtaques;
+		magoAtaques= AtaquesMago.values();
+		VistaMenu menuAtaquesMago=new VistaMenu(magoAtaques);
+		menuAtaquesMago.mostrarOpciones();
 	}
 
 	/**
