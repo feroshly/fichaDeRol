@@ -115,7 +115,12 @@ public class VistaAltas extends VistaGeneral{
 		VistaMenu menuProfesion = new VistaMenu(profesion);
 		// Prep
 		menuProfesion.mostrarOpciones();
-		RasgoProfesiones nuevaProfesion = profesion[menuProfesion.pedirOpcion() - 1];
+		///--------------
+		int respuesta = (menuProfesion.pedirOpcion() - 1);
+		
+		///--------------
+		RasgoProfesiones nuevaProfesion = profesion[respuesta];
+		System.out.printf("%s%n%n",nuevaProfesion);
 		return nuevaProfesion;
 	}
 
@@ -135,6 +140,7 @@ public class VistaAltas extends VistaGeneral{
 		// Prep
 		menuRaza.mostrarOpciones();
 		RasgoRazas nuevaRaza = raza[menuRaza.pedirOpcion() - 1];
+		System.out.printf("%s%n%n",nuevaRaza);
 		return nuevaRaza;
 	}
 
@@ -154,6 +160,8 @@ public class VistaAltas extends VistaGeneral{
 		// Prep
 		menuArmadura.mostrarOpciones();
 		RasgoArmaduras nuevaArmadura = armadura[menuArmadura.pedirOpcion() - 1];
+		
+		System.out.printf("%s%n%n",nuevaArmadura);
 		return nuevaArmadura;
 	}
 
@@ -173,6 +181,8 @@ public class VistaAltas extends VistaGeneral{
 		// Prep
 		menuArma.mostrarOpciones();
 		RasgoArmas nuevaArma = arma[menuArma.pedirOpcion() - 1];
+		
+		System.out.printf("%s%n%n",nuevaArma);
 		return nuevaArma;
 	}
 
