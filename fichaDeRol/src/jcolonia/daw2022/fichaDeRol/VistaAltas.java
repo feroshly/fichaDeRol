@@ -116,8 +116,30 @@ public class VistaAltas extends VistaGeneral{
 		// Prep
 		menuProfesion.mostrarOpciones();
 		///--------------
-		int respuesta = (menuProfesion.pedirOpcion() - 1);
+		int respuesta;
+		respuesta = (menuProfesion.pedirOpcion() - 1);
 		
+		boolean exit=false;
+		do {
+			switch(respuesta) {
+				case 1: mostrarAtaquesAsesino();
+					break;
+				case 2: mostrarAtaquesSanador();
+					break;
+				
+				case 3: mostrarAtaquesGuerrero();
+					break;
+				
+				case 4: mostrarAtaquesMago();
+					break;
+				
+				case 0:
+					exit= true;
+	
+				default:
+					System.out.printf("\nSe acabo el programa\n\n");
+				}
+		}while(!exit);	
 		///--------------
 		RasgoProfesiones nuevaProfesion = profesion[respuesta];
 		System.out.printf("%s%n%n",nuevaProfesion);
