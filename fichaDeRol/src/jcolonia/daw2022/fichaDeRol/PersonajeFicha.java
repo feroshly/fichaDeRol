@@ -10,7 +10,7 @@ import java.nio.file.Path;
  * y gestiona personajes o fichas de personaje.
  * @author <a href= "mailto:luisbienal@gmail.com">Luis G. Contreras</a>
  */
-public class PersonajeFicha {
+public class PersonajeFicha<T extends Ataque> {
 	
 	/**
 	 * El nombre del jugador.
@@ -45,6 +45,10 @@ public class PersonajeFicha {
 	/**
 	 * Inicializa los valores correspondientes.
 	 */
+	
+	private Ataque ataque; 
+//	private T ataque; 
+	
 	public PersonajeFicha() {
 		super();
 	}
@@ -58,20 +62,13 @@ public class PersonajeFicha {
 
 		String textoResultado="";
 		
-//		textoResultado+=String.format("->>Ficha de Personaje:<<-%n");
-//		textoResultado+=String.format("  NOMBRE-JUGADOR| NOMBRE-PERSONAJE|PROFESION |RAZA |ARMADURA |ARMA |%n");
-//		textoResultado+=String.format("  %s|",nombreJugador);
-//		textoResultado+=String.format("  %s|",nombrePersonaje);
-//		textoResultado+=String.format("  %s|",profesion);
-//		textoResultado+=String.format("  %s|",raza);
-//		textoResultado+=String.format("  %s|",armadura);
-//		textoResultado+=String.format("  %s|",arma);
-//		textoResultado+=String.format("%n............%n");
-//		return textoResultado;
 		textoResultado+=String.format("->>Ficha de Personaje:<<-%n");
 		textoResultado+=String.format("  ·NOMBRE-JUGADOR:\n%s%n",nombreJugador);
 		textoResultado+=String.format("  ·NOMBRE-PERSONAJE:\n%s%n", nombrePersonaje);
 		textoResultado+=String.format("  ·PROFESION:\n%s%n", profesion);
+		
+		textoResultado+=String.format("  ·PROFESION ATAQUES:\n%s%n", ataque);
+		
 		textoResultado+=String.format("  ·RAZA:\n%s%n" , raza);
 		textoResultado+=String.format("  ·ARMADURA:\n%s%n" , armadura);
 		textoResultado+=String.format("  ·ARMA:\n%s%n" , arma);
@@ -85,7 +82,7 @@ public class PersonajeFicha {
 	 */
 	public String toStringCsv(){
 		String textoResultado="";
-		textoResultado=String.format("%s#%s#%s#%s#%s#%s",nombreJugador, nombrePersonaje, profesion, raza, armadura, arma);
+		textoResultado=String.format("%s#%s#%s#%s#%s#%s#%s",nombreJugador, nombrePersonaje, profesion, ataque, raza, armadura, arma);
 		return textoResultado;
 	}
 
@@ -131,17 +128,29 @@ public class PersonajeFicha {
 		RasgoProfesiones profesiones;
 		profesiones=RasgoProfesiones.valueOf(seccion[2]);
 		fichaInversa.setProfesion(profesiones);
-
+		//------------
+		Ataque ataqueCorrespondiente;
+		for (Ataque ataqueElegido : Ataque.getValues()) {
+		    if (getProfesion().equals(profesiones)) {
+		        ataqueCorrespondiente = ataqueElegido;
+		        //break;
+		    }else {
+		    	ataqueCorrespondiente=null;
+		    }
+		}
+		fichaInversa.setProfesionAtaque(ataqueCorrespondiente);	
+		//------------
+		
 		RasgoRazas raza;
-		raza=RasgoRazas.valueOf(seccion[3]);
+		raza=RasgoRazas.valueOf(seccion[5]);
 		fichaInversa.setRaza(raza);
 
 		RasgoArmaduras armaduras;
-		armaduras=RasgoArmaduras.valueOf(seccion[4]);
+		armaduras=RasgoArmaduras.valueOf(seccion[5]);
 		fichaInversa.setArmadura(armaduras);
 		
 		RasgoArmas arma;
-		arma=RasgoArmas.valueOf(seccion[5]);
+		arma=RasgoArmas.valueOf(seccion[6]);
 		fichaInversa.setArma(arma);		
 		
 		return fichaInversa;
@@ -195,6 +204,7 @@ public class PersonajeFicha {
 		return arma;
 	}
 	
+	
 	/**
 	 * Asigna el nombre al Personaje
 	 * @param nombrePersonaje El nombre del personaje
@@ -242,5 +252,25 @@ public class PersonajeFicha {
 	public void setArma(RasgoArmas arma) {
 		this.arma = arma;
 	}
+
+
+	/**
+	 * Asigna el ataque al personaje
+	 * @param ataque El ataque del personaje
+	 */
+	public void setProfesionAtaque(Ataque ataque) {
+		this.ataque = ataque;
+	}
+	/**
+	 * Devuelve el arma del personaje.
+	 * @return ataque El ataque del personaje
+	 */	
+	public Ataque getProfesionAtaque() {
+		return ataque;
+	}
+
+
 	
 }
+	
+

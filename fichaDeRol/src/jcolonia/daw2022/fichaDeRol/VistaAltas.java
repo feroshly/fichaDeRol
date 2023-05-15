@@ -115,74 +115,100 @@ public class VistaAltas extends VistaGeneral{
 		VistaMenu menuProfesion = new VistaMenu(profesion);
 		// Prep
 		menuProfesion.mostrarOpciones();
-		///--------------Este trozo permite acceder a los ataques de cada clase.
-							//La variable respuesta es delicada, para elegir el enum debe ser MENOS 1,
-							//pero al convertirlo en un CASE SWITCH tengo que quitar el MENOS 1.
-		int eleccionProfesion;
-		int eleccionProfesionAtaques;
-		//int respuesta;
-		//respuesta = (menuProfesion.pedirOpcion() - 1);//NO BORRAR
-		
 
-		boolean exit=false;
-		do {
-			eleccionProfesion = (menuProfesion.pedirOpcion() - 1);//NO BORRAR
-			//Como es un case no hace falta restarle 1,
-			//Como se lo hemos restado antes se lo sumamos para igualar.
-			eleccionProfesionAtaques= (eleccionProfesion+1);
-			switch(eleccionProfesionAtaques) {
-				case 1: mostrarAtaquesAsesino();
-				break;
-					
-				case 2: mostrarAtaquesSanador();
-				break;
-				
-				case 3: mostrarAtaquesGuerrero();
-				break;
-				
-				case 4: mostrarAtaquesMago();
-				break;
-
-				case 0:
-					exit= true;
-				default:
-					System.out.printf("\nSe acabo el programa\n\n");
-				}
-		}while(!exit);	
-		///--------------
-		
-		RasgoProfesiones nuevaProfesion = profesion[eleccionProfesion];
-		
+		RasgoProfesiones nuevaProfesion;
+		nuevaProfesion = profesion[menuProfesion.pedirOpcion() - 1];
+		//preguntarProfesionAtaques(nuevaProfesion);
 		System.out.printf("%s%n%n",nuevaProfesion);
 		return nuevaProfesion;
 	}
+	
+	private Ataque preguntarProfesionAtaques(RasgoProfesiones nuevaProfesion){
+		String peticionAtaqueProfesion = "Escoje una ATAQUE de PROFESION para el personaje";
+		System.out.printf("	%s:%n", peticionAtaqueProfesion);
+		//T ataqueDeProfesion;
+		Ataque ataqueDeProfesion;
+		
+	    if(nuevaProfesion.toString().equals("Asesino")) {
+	    //ataqueDeProfesion = (T)  preguntarMostrarAtaquesAsesino();
+        ataqueDeProfesion =  preguntarMostrarAtaquesAsesino();
+	    }
+	    else if(nuevaProfesion.toString().equals("Sanador")) {
+	        ataqueDeProfesion =  preguntarMostrarAtaquesSanador();
+	    }
+	    else if(nuevaProfesion.toString().equals("Guerrero")) {
+	        ataqueDeProfesion =  preguntarMostrarAtaquesGuerrero();
+	    }
+	    else if(nuevaProfesion.toString().equals("Mago")) {
+	        ataqueDeProfesion = preguntarMostrarAtaquesMago();
+	    }
+	    else {
+	        ataqueDeProfesion = null;
+	    }
+		//--------------------------------------------------//
+		
+//	    if(nuevaProfesion.toString().equals("Asesino")) {
+//	        ataqueDeProfesion = (T) preguntarMostrarAtaquesAsesino();
+//	    }
+//	    else if(nuevaProfesion.toString().equals("Sanador")) {
+//	        ataqueDeProfesion = (T) preguntarMostrarAtaquesSanador();
+//	    }
+//	    else if(nuevaProfesion.toString().equals("Guerrero")) {
+//	        ataqueDeProfesion = (T) preguntarMostrarAtaquesGuerrero();
+//	    }
+//	    else if(nuevaProfesion.toString().equals("Mago")) {
+//	        ataqueDeProfesion = (T) preguntarMostrarAtaquesMago();
+//	    }
+//	    else {
+//	        ataqueDeProfesion = null;
+//	    }
+		//--------------------------------------------------//
+	    return ataqueDeProfesion;
+	}
+	
 
-	private void mostrarAtaquesAsesino() {
+	private AtaquesAsesino preguntarMostrarAtaquesAsesino() {
 		AtaquesAsesino []asesinoAtaques;
 		asesinoAtaques=AtaquesAsesino.values();
 		VistaMenu menuAtaques=new VistaMenu(asesinoAtaques);
 		menuAtaques.mostrarOpciones();
+		
+		AtaquesAsesino nuevoAtaqueAsesino=asesinoAtaques[menuAtaques.pedirOpcion()-1];
+		System.out.printf("%s%n%n", asesinoAtaques);
+		return nuevoAtaqueAsesino;
 	}
-
-	private void mostrarAtaquesSanador() {
+	
+	private AtaquesSanador preguntarMostrarAtaquesSanador() {
 		AtaquesSanador []sanadorAtaques;
 		sanadorAtaques=AtaquesSanador.values();
 		VistaMenu menuSanadorAtaques=new VistaMenu(sanadorAtaques);
 		menuSanadorAtaques.mostrarOpciones();
+		
+		AtaquesSanador nuevoAtaqueSanador=sanadorAtaques[menuSanadorAtaques.pedirOpcion()];
+		System.out.printf("%s%n%n", sanadorAtaques);
+		return nuevoAtaqueSanador;
 	}
 
-	private void mostrarAtaquesGuerrero() {
+	private AtaquesGuerrero preguntarMostrarAtaquesGuerrero() {
 		AtaquesGuerrero []guerreroAtaques;
 		guerreroAtaques=AtaquesGuerrero.values();
 		VistaMenu menuGuerreroAtaques= new VistaMenu(guerreroAtaques);
 		menuGuerreroAtaques.mostrarOpciones();
+		
+		AtaquesGuerrero nuevoAtaqueGuerrero=guerreroAtaques[menuGuerreroAtaques.pedirOpcion()-1];
+		System.out.printf("%s%n%n",nuevoAtaqueGuerrero);		
+		return nuevoAtaqueGuerrero;
 	}
 
-	private void mostrarAtaquesMago() {
+	private AtaquesMago preguntarMostrarAtaquesMago() {
 		AtaquesMago []magoAtaques;
 		magoAtaques= AtaquesMago.values();
 		VistaMenu menuAtaquesMago=new VistaMenu(magoAtaques);
 		menuAtaquesMago.mostrarOpciones();
+		
+		AtaquesMago nuevaAtaqueMago = magoAtaques[menuAtaquesMago.pedirOpcion() - 1];
+		System.out.printf("%s%n%n",nuevaAtaqueMago);
+		return nuevaAtaqueMago;
 	}
 
 	/**
@@ -199,6 +225,7 @@ public class VistaAltas extends VistaGeneral{
 		raza = RasgoRazas.values();
 		VistaMenu menuRaza = new VistaMenu(raza);
 		// Prep
+		
 		menuRaza.mostrarOpciones();
 		RasgoRazas nuevaRaza = raza[menuRaza.pedirOpcion() - 1];
 		System.out.printf("%s%n%n",nuevaRaza);
@@ -258,8 +285,13 @@ public class VistaAltas extends VistaGeneral{
 		PersonajeFicha nuevoPersonaje = new PersonajeFicha();
 		nuevoPersonaje.setNombreJugador(preguntarNombreJugador());
 		nuevoPersonaje.setNombrePersonaje(preguntarNombrePersonaje());
-
 		nuevoPersonaje.setProfesion(preguntarProfesion());
+
+		RasgoProfesiones profesionElegida;		
+		profesionElegida = nuevoPersonaje.getProfesion();
+		
+		
+		nuevoPersonaje.setProfesionAtaque(preguntarProfesionAtaques(profesionElegida));
 		nuevoPersonaje.setRaza(preguntarRaza());
 		nuevoPersonaje.setArmadura(preguntarArmadura());
 		nuevoPersonaje.setArma(preguntarArma());

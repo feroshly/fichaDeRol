@@ -21,7 +21,6 @@ public class VistaGeneral {
 	 * Inicializa el la entrada de texto por consola.
 	 */
 	public VistaGeneral() {
-		//---Aqui se rompio
 		entrada= new Scanner(System.in);
 	}
 

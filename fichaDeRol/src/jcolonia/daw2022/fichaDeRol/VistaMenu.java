@@ -11,7 +11,7 @@ public class VistaMenu extends VistaGeneral{
 	 * Lista con opciones para que el usuario elija.
 	 */
 	private ArrayList<String> listaOpciones;
-
+	
 	/**
 	 * Inicializa el menu y sus elementos.
 	 * @param opcionesMenuEjemplo las opciones correspondientes
@@ -24,7 +24,7 @@ public class VistaMenu extends VistaGeneral{
 			listaOpciones.add(linea.toString());
 		}
 	}
-	
+
 	/**
 	 * Muestra las lista de opciones del menu por pantalla.
 	 */
