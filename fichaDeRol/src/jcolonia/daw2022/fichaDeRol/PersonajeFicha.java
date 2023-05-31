@@ -58,16 +58,6 @@ public class PersonajeFicha {
 
 		String textoResultado="";
 		
-//		textoResultado+=String.format("->>Ficha de Personaje:<<-%n");
-//		textoResultado+=String.format("  NOMBRE-JUGADOR| NOMBRE-PERSONAJE|PROFESION |RAZA |ARMADURA |ARMA |%n");
-//		textoResultado+=String.format("  %s|",nombreJugador);
-//		textoResultado+=String.format("  %s|",nombrePersonaje);
-//		textoResultado+=String.format("  %s|",profesion);
-//		textoResultado+=String.format("  %s|",raza);
-//		textoResultado+=String.format("  %s|",armadura);
-//		textoResultado+=String.format("  %s|",arma);
-//		textoResultado+=String.format("%n............%n");
-//		return textoResultado;
 		textoResultado+=String.format("->>Ficha de Personaje:<<-%n");
 		textoResultado+=String.format("  ·NOMBRE-JUGADOR:\n%s%n",nombreJugador);
 		textoResultado+=String.format("  ·NOMBRE-PERSONAJE:\n%s%n", nombrePersonaje);

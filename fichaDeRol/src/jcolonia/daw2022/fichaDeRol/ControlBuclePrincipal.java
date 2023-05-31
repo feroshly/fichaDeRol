@@ -11,8 +11,8 @@ public class ControlBuclePrincipal {
 	/**
 	 * Lista de textos asociados a cada una de las opciones para elegir en el menu.
 	 */
-	private final String[] OPCIONES_MENU = { "Crear personaje", "Mostrar personajes", "Exportar equipo",
-			"Importar equipo" };
+	private final String[] OPCIONES_MENU = { "Crear personaje", "Mostrar personajes", "Exportar equipo a base de datos (En proceso)",
+			"Importar equipo desde base de datos (En proceso)" };
 
 	/**
 	 * Lista de textos que se mostrara dependiendo de cual opcion del menu
@@ -141,7 +141,7 @@ public class ControlBuclePrincipal {
 	public static void main(String[] args) {
 		ControlBuclePrincipal control = new ControlBuclePrincipal();
 		control.buclePrincipal();
-
+		
 	}
 
 }

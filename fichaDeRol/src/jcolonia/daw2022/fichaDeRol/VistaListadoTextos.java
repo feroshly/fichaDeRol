@@ -7,7 +7,7 @@ import java.util.Vector;
  * Muestra las fichas de personaje que se han guardado en el equipo principal.
  * @author <a href= "mailto:luisbienal@gmail.com">Luis G. Contreras</a>
  */
-public class VistaListadoTextos {
+public class VistaListadoTextos{
 	/**
 	 * 
 	 */
@@ -33,4 +33,6 @@ public class VistaListadoTextos {
 	        }
 	    }
 	}
+	
+	
 }
